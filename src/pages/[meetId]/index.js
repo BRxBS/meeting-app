@@ -12,4 +12,18 @@ function MeetupDetails(props) {
   );
 }
 
+
+export async function getStaticProps(context){
+// fetch the data for a single meetup
+
+const meetId = context.parans.meetId
+
+  return{
+    props:{
+
+    }
+  }
+
+}
+
 export default MeetupDetails;
