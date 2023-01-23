@@ -4,7 +4,7 @@
 
 .image {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   overflow: hidden;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -43,4 +43,11 @@
 .actions button:hover,
 .actions button:active {
   background-color: #ffe2ed;
+}
+@media only screen and (min-width: 800px){
+  .image {
+  
+    height: 20rem;
+    overflow: hidden;
+  }
 }
