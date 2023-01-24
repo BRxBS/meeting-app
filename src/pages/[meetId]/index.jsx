@@ -1,15 +1,24 @@
 import { MongoClient, ObjectId } from 'mongodb'
+import Head from 'next/head'
 import classes from './MeetDets.module.scss';
 
 function MeetupDetails(props) {
   return (
+    <> 
+    <Head>
+    <title>Let's Meet </title>
+    </Head>
     <div className={classes.container}>
         <img className={classes.img} src={props.meetupData.image} alt='' />
         <h2 className={classes.title} >{props.meetupData.title}</h2>
         <h3 className={classes.address} >{props.meetupData.address}</h3>
-        <p className={classes.description} > {props.meetupData.description}</p>
+        <h3 className={classes.date} >{props.meetupData.date}</h3>
+        <p className={classes.description} > {props.meetupData.description}
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora impedit illum quae possimus. Enim dignissimos quo cum itaque dolorem sint, maiores modi ad placeat atque omnis ipsam amet asperiores.
+        </p>
 
     </div>
+    </>
   );
 }
 

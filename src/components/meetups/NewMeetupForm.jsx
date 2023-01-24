@@ -9,6 +9,7 @@ function NewMeetupForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
+  const dateInputRef = useRef();
   const descriptionInputRef = useRef();
 
   function submitHandler(event) {
@@ -17,6 +18,7 @@ function NewMeetupForm(props) {
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
+    const enteredDate = dateInputRef.current.value;
     const enteredDescription = descriptionInputRef.current.value;
 
     const meetupData = {
@@ -24,6 +26,7 @@ function NewMeetupForm(props) {
       image: enteredImage,
       address: enteredAddress,
       description: enteredDescription,
+      date: enteredDate,
     };
 
     props.onAddMeetup(meetupData);
@@ -45,6 +48,10 @@ function NewMeetupForm(props) {
         <div className={classes.control}>
           <label htmlFor='address'>Address</label>
           <input type='text' required id='address' ref={addressInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='date'>Date</label>
+          <input type='text' required id='date' ref={dateInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='description'>Description</label>

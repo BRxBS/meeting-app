@@ -22,6 +22,9 @@ function showDetailsHandle() {
           <h3>{props.title}</h3>
           <address>{props.address}</address>
         </div>
+        <div className={classes.content}>
+          <p>{props.date}</p>
+        </div>
         <div className={classes.actions}>
           <button onClick={showDetailsHandle}>Show Details</button>
         </div>

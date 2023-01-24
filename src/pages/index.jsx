@@ -30,7 +30,7 @@ export async function getStaticProps(){
 
   const meetupsCollection =  db.collection(process.env.MONGODB_COLLECTION);
 
-  const meetups = await meetupsCollection.find().toArray()
+  const meetups = await meetupsCollection.find().sort({_id: -1}).toArray()
  
   client.close();
  
@@ -40,6 +40,7 @@ export async function getStaticProps(){
       meetups: meetups.map(meetup => ({
         title: meetup.title,
         address: meetup.address,
+        date: meetup.date,
         image: meetup.image,
         id: meetup._id.toString()
       }))
