@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #77002e;
+  background: rgb(63,135,205);
+  background: linear-gradient(129deg, rgba(63,135,205,1) 2%, rgba(173,123,237,1) 91%);
   padding: 0 10%;
 
 }
@@ -38,7 +39,8 @@
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: #f4c7d8;
+  color: rgb(221, 238, 255);
+  transition: 0.5s;
 }
 
 

@@ -32,9 +32,10 @@
 
 .actions button {
   font: inherit;
+  font-weight: 600;
   cursor: pointer;
-  color: #77002e;
-  border: 1px solid #77002e;
+  color: #894adb;
+  border: 1px solid #ad7bed;
   background-color: transparent;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
@@ -42,7 +43,7 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe2ed;
+  background-color: #d9c6f3;
 }
 @media only screen and (min-width: 800px){
   .image {
