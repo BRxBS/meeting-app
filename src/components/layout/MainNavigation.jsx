@@ -6,7 +6,12 @@ function MainNavigation() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Let's Meet</div>
+      <div className={classes.logo}>
+        <Link href='/' >
+        Let's Meet
+        </Link>
+  
+        </div>
       <nav>
       <div className={classes.side_bar}>
             <SideBar/>
